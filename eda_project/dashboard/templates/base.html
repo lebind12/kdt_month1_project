@@ -1,0 +1,101 @@
+<!-- dashboard/templates/base.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ... -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <!-- ... -->
+</head>
+
+<body class="sb-nav-fixed">
+    <!-- Top Navbar -->
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand ps-3" href="{% url 'dashboard' %}">
+            11조
+        </a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id=""sidebarToggle href="#!">
+            
+        </button>
+    </nav>
+    <!-- End of Top Navbar -->
+    <!-- Sidebar -->
+  <div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+      <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+          <div class="nav">
+            <a class="nav-link" href="{% url 'dashboard' %}">
+              <div class="sb-nav-link-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              조원 소개
+            </a>
+            <a class="nav-link collapsed" href="{% url 'DataCleansing' %}" data-toggle="collapse" data-target="#collapseLayouts"
+              aria-expanded="false" aria-controls="collapseLayouts">
+              <div class="sb-nav-link-icon">
+                <i class="fas fa-columns"></i>
+              </div>
+              Data Cleansing 과정
+              <div class="sb-sidenav-collapse-arrow">
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+              data-parent="#sidenavAccordion">
+              <nav class="sb-sidenav-menu-nested nav">
+                <a class="nav-link" href="{% url 'dashboard' %}">Static Navigation</a>
+                <a class="nav-link" href="{% url 'dashboard' %}">Light Sidenav</a>
+              </nav>
+            </div>
+            <a class="nav-link" href="{% url 'EDA' %}">
+              <div class="sb-nav-link-icon">
+                <i class="fas fa-chart-area"></i>
+              </div>
+              EDA
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End of Sidebar -->
+        <!-- Main Content -->
+    <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid">
+            <h1 class="mt-4">{% block heading %}{% endblock %}</h1>
+            {% block content %}{% endblock %}
+          </div>
+        </main>
+      </div>
+      <!-- End of Main Content -->
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+
+</html>
