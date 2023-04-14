@@ -4,48 +4,31 @@
 
 {% block content %}
 
-<!-- Overview Section -->
-<div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <h2 class="mb-4" id="overview">전세계의 가장 높은, 낮은 행복지수를 가진 국가</h2>
-        <p>
-          <!-- Add the overview of your EDA report here -->
-        </p>
-      </div>
-    </div>
-  </div>
-
   <!-- Data Visualization Section -->
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <h3 class="mb-4" id="data-visualization">연도별 가장높은 행복지수를 가진 국가 top5</h3>
+        <h2 class="mb-4" id="data-visualization">Finland 연도별 Feature</h2>
         <!-- Add the data visualization content of your EDA report here -->
         <div class="row">
           <div class="col-md-6">
             <!-- Example of embedding an image for a chart -->
-            <img src="{% static 'image/EDA4_chart1.png' %}" class="img-fluid" alt="Chart 1">
+            <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div><div style="line-height:130%">9</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">#&nbsp;연도별&nbsp;특정&nbsp;국가의&nbsp;feature값&nbsp;line&nbsp;plot</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#a71d5d">def</span>&nbsp;draw_country_year_traking(country,&nbsp;feature):</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;plt.title(f<span style="color:#63a35c">'연도별&nbsp;{country}&nbsp;{feature}'</span>)</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;plt.ylabel(feature)</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;part&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span>&nbsp;df[df[<span style="color:#63a35c">'Country'</span>]&nbsp;<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#0086b3"></span><span style="color:#a71d5d">=</span>&nbsp;country]</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;sns.lineplot(x<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span><span style="color:#63a35c">'Year'</span>,&nbsp;y<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span>feature,&nbsp;data<span style="color:#0086b3"></span><span style="color:#a71d5d">=</span>part)</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;plt.grid()</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;plt.legend()</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;plt.show()</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">draw_country_year_traking(<span style="color:#63a35c">'Finland'</span>,&nbsp;<span style="color:#63a35c">'GDP'</span>)</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            <img src="{% static 'image/EDA6_chart7.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div>
+            <!-- Example of embedding an image for a chart -->
+            <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">draw_country_year_traking(<span style="color:#63a35c">'Finland'</span>,&nbsp;<span style="color:#63a35c">'GDP'</span>)</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            <img src="{% static 'image/EDA6_chart8.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div>
+            <!-- Example of embedding an image for a chart -->
+            <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">draw_country_year_traking(<span style="color:#63a35c">'Finalnd'</span>,&nbsp;<span style="color:#63a35c">'Social&nbsp;Support'</span>)</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+            <img src="{% static 'image/EDA6_chart9.png' %}" class="img-fluid" alt="Chart 1">
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Data Visualization Section -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <h3 class="mb-4" id="data-visualization">연도별 가장낮은 행복지수를 가진 국가 top5</h3>
-        <!-- Add the data visualization content of your EDA report here -->
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Example of embedding an image for a chart -->
-            <img src="{% static 'image/EDA4_chart2.png' %}" class="img-fluid" alt="Chart 1">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 {% endblock %}
