@@ -1,2 +1,3 @@
 ./eda_project/db.sqlite3
 ./eda_project/migrations
+./.DS_store
