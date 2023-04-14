@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <h2 class="mb-4" id="overview">전세계의 가장 높은, 낮은 행복지수를 가진 국가</h2>
+        <h2 class="mb-4" id="overview">EDA</h2>
         <p>
           <!-- Add the overview of your EDA report here -->
         </p>
@@ -20,14 +20,14 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <h3 class="mb-4" id="data-visualization">연도별 가장높은 행복지수를 가진 국가 top5</h3>
         <!-- Add the data visualization content of your EDA report here -->
         <div class="row">
           <div class="col-md-6">
             <!-- Example of embedding an image for a chart -->
-            <img src="{% static 'image/EDA4_chart1.png' %}" class="img-fluid" alt="Chart 1">
+            <img src="{% static 'image/EDA5_chart1.png' %}" class="img-fluid" alt="Chart 1">
           </div>
         </div>
+        <h3 class="mb-4" id="data-visualization">GDP -> Health -> Social Support 순으로 상관관계가 높음.</h3>
       </div>
     </div>
   </div>
@@ -36,14 +36,147 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <h3 class="mb-4" id="data-visualization">연도별 가장낮은 행복지수를 가진 국가 top5</h3>
         <!-- Add the data visualization content of your EDA report here -->
         <div class="row">
           <div class="col-md-6">
             <!-- Example of embedding an image for a chart -->
-            <img src="{% static 'image/EDA4_chart2.png' %}" class="img-fluid" alt="Chart 1">
+            <img src="{% static 'image/EDA5_chart2.png' %}" class="img-fluid" alt="Chart 1">
           </div>
         </div>
+        <h3 class="mb-4" id="data-visualization">Year별 평균 행복 지수는 2018년, 2019년에 낮았으며, 작년 2022년에는 상승세를 보임.</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart3.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+        </div>
+        <h3 class="mb-4" id="data-visualization">지역별(대륙별) 평균 행복 지수는 Austrailia and New Zealand -> North America -> Western Europe 순이었음.</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Overview Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="overview">최신 데이터(2022년)를 바탕으로 요인별 영향력을 한 번 더 확인해보자</h2>
+        <p>
+          <!-- Add the overview of your EDA report here -->
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart4.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">Social Support와 행복 지수는 양의 상관관계를 보임.</h3>
+        <h3 class="mb-4" id="data-visualization">Western Europe은 높은 Social Support와 높은 Score를, Sub-Saharan Africa는 낮은 Social Support와 낮은 Score를 보임.</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart5.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">GDP와 행복 지수는 양의 상관관계를 보임. Social Support보다 좀 더 뚜렷한 상관성을 보임.</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart6.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">Health 역시 행복 지수와 양의 상관관계를 보임.</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Overview Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="overview">대한민국의 경우</h2>
+        <p>
+          <!-- Add the overview of your EDA report here -->
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart7.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">대한민국의 행복지수 순위는 2016년 급격하게 떨어진 이후 회복세를 보이지 못 하고 있음.</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart8.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">단, 행복 지수 자체는 예년 2022년 높은 상승률을 보임.  </h3>
+        <h3 class="mb-4" id="data-visualization">즉, 2022년 행복지수가 상승한 것은 전세계에서 공통적으로 일어난 사항이라고 추정할 수 있음.</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart9.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">대한민국의 GDP는 2018년을 제외하고 꾸준히 상승세를 보이는 편.</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart10.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">Social Support의 경우 2021년 급격하게 하락하는데, 이는 코로나19의 영향도 있을 것이라 추정 가능함.</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!-- Add the data visualization content of your EDA report here -->
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA5_chart11.png' %}" class="img-fluid" alt="Chart 1">
+        <h3 class="mb-4" id="data-visualization">Health의 경우 2017년을 제외하고 꾸준하게 하락세를 보임.</h3>
       </div>
     </div>
   </div>

@@ -12,6 +12,8 @@ def EDA3(request):
     return render(request, 'EDA3.html')
 def EDA4(request):
     return render(request, 'EDA4.html')
+def EDA5(request):
+    return render(request, 'EDA5.html')
 
 def DataCleansing(request):
     return render(request, 'DataCleansing.html')
