@@ -1,0 +1,195 @@
+<!-- dashboard/templates/another_page.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Overview Section -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="overview">EDA Project 1.</h2>
+        <div class="card mb-4">
+            <div class="card-body">
+                세계 행복 지수 보고서를 바탕으로 판데믹과 같은 대규모 전염병이 지수에 어떤 영향을 미치는지 알아보자.<br>
+                <br>
+                대체로 서유럽, 북미, 오스트레일리아와 뉴질랜드가 순위가 높음<br>
+                중부 아프리카, 남아시아 쪽이 순위가 낮음.<br>
+                Social Support와 GDP를 연관지어서 살펴보자<br>
+                먼저 각 지역별 요소들의 데이터 분포를 확인<br>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="data-visualization">연도별 지역들의 행복 순위 평균 값</h2>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA1_chart1.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="data-visualization">연도별 Health 지수의 평균 값의 변화</h2>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA1_chart2.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <p>- 펜데믹의 영향을 볼 수 있을 것 같다.(2020년 3월 11일, WHO는 코로나 팬데믹을 선언했다)</p>
+            <p>- 그럼 2016년과 2015년에 유사한 사례가 존재하지 않을까?</p>
+            <p>- 확인해본 결과 2015년 메르스, 2016년 1월 지카바이러스가 발병. WHO가 관련내용을 발표했다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="data-visualization">연도별 데이터프레임에서 Health와 Social Support</h2>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA1_chart3.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <p>- corr 값이 0.6정도</p>
+            <p>- Social Support는 사회적 지지 정도로, 개인이 어려운 상황에 처했을 때 주변 사람이 도움을 줄 수 있는 정도를 측정한 값이다.</p>
+            <p>- Health가 떨어지면서 “내 코가 석자”이면  행복지수가 떨어질 것이다. ← 가설</p>
+            <p>- 상단이 Social Support, 하단이 Health 관련 그래프</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="data-visualization">예측</h2>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA1_chart4.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <p>- 펜데믹이 발생했다</p>
+            <p>- Health 수치가 낮아질 것이다.</p>
+            <p>- Social Support 수치가 낮아질 것이다.</p>
+            <p>- Score가 낮아질 것이다</p>
+            <p>- Rank가 낮아질 것이다(순위가 낮아진다)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Conclusions Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="conclusions">결과</h2>
+        <p>
+            1. Score는 Health와 Social Support의 감소세와 무관하게 증가세를 보였다(2020 기준)
+        </p>
+        <p>
+            2. Score은 GDP의 증가세와 함께 움직이는 경향이 더 컸다
+        </p>
+        <p>
+            3. Social Support와 Health는 절대적인 원인과 결과는 아니지만 어느정도 비슷한 경향을 보인다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conclusions Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="conclusions">가설 보완</h2>
+        <p>
+            1. 가설과는 다른 결과가 나왔는데 이는 지역별 편차가 반영되지 않아서 그런 것이 아닐까?
+        </p>
+        <p>
+            2. 2020년 펜데믹의 영향이 큰 지역을 살펴본다.
+        </p>
+        <p>
+            결론: Social Support와 Score, Rank간의 큰 연관관계는 없는 것 같다.
+            Social Support가 개인이 필요할 때 소셜 네트워크에서 받을 것으로 예상되는 지원 수준을 의미한다.
+            Social Support의 감소세는 펜데믹 발생 이후 사회적 거리두기와 이동 제한에 따른 사회적 네트워크와의 단절이 크게 영향을 미쳤다고 볼 수 있다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="data-visualization">연도별 그래프에서 지역을 세분화하여 비교</h2>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA1_chart5.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <p>- Health와 Social Support의 관계를 위주로 (노란색이 Social Support, 파란색이 Health)</p>
+            <p>- 대부분의 지역에서 Social Support와 Health와의 양의 상관관계를 볼 수 있으나 중동 및 북부 아프리카 지역과 남아시아 지역은 그렇지 않았다.</p>
+            <p>- 사회적 관계가 단절될 수록 기대 수명이 줄어드는 경향성을 볼 수 있다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conclusions Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="conclusions">최종 결론</h2>
+        <p>
+            1. 대체로 GDP가 Score와 Rank에 상관관계가 가장 크고 경향성도 많이 따라가는 편이다.
+        </p>
+        <p>
+            2. Health와 Social Support 지수는 꽤 강한 상관관계 지수를 갖는다.
+        </p>
+        <p>
+            3. 2015 메르스, 2016 지카바이러스, 2020 판데믹에 따라 Health 지수의 하락을 관찰할 수 있고,
+        </p>
+        <p>
+            사회적 거리두기에 따른 Social Support 지수가 감소하는 경향을 확인할 수 있다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

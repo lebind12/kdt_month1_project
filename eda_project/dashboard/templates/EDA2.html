@@ -1,0 +1,65 @@
+<!-- dashboard/templates/another_page.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Overview Section -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2 class="mb-4" id="overview">전체 데이터 EDA</h2>
+        <p>
+          <!-- Add the overview of your EDA report here -->
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h3 class="mb-4" id="data-visualization">전체 데이터 상관관계 시각화</h3>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA2_chart1.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h3 class="mb-4" id="data-visualization">히트맵을 통한 상관계수 시각화</h3>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA2_chart2.png' %}" class="img-fluid" alt="Chart 1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h3 class="mb-4" id="data-visualization">세계지도를 활용한 행복지수 시각화</h3>
+        <!-- Add the data visualization content of your EDA report here -->
+        <div class="row">
+            <!-- Example of embedding an image for a chart -->
+            <img src="{% static 'image/EDA2_chart3.png' %}" class="img-fluid" alt="Chart 1" style="max-width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
