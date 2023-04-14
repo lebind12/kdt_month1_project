@@ -1,4 +1,3 @@
-# kdt_month1_project
 # [11조] Monthly Project 1개월차
 
 - 역할 분담
@@ -43,5 +42,3 @@
     1. 데이터 전처리 문제가 있어 처음 부터 다시 진행(기존 Social Support feature에만 적용시켯던 scaler를 Score, GDP, Health, Social Support 모든 컬럼에 대해 반영시켜줌)
 
 ---
-
-[11조 칸반보드](https://www.notion.so/18147dde597d4356a7589b0fed0f81af)
